@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvorak.github.io</id>
     <title>Dvorak</title>
-    <updated>2020-05-31T18:24:47.223Z</updated>
+    <updated>2020-05-31T18:26:50.474Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvorak.github.io"/>
     <link rel="self" href="https://dvorak.github.io/atom.xml"/>
@@ -26,7 +26,7 @@
         <id>https://dvorak.github.io/post/least-squares-method-p1/</id>
         <link href="https://dvorak.github.io/post/least-squares-method-p1/">
         </link>
-        <updated>2020-05-28T09:35:33.000Z</updated>
+        <updated>2020-05-28T03:35:33.000Z</updated>
         <summary type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
@@ -89,14 +89,12 @@ LS(x): Lost function</p>
 <blockquote>
 <p>x_LS = 1/m (y_1 + y_2 + ... + y_m).</p>
 </blockquote>
-<blockquote>
-<p>Here's an interactive least squares fitting <a href="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_en.html"><strong>Simulator</strong></a> provided by the PhET Interactive Simulations project at the University of Colorado.</p>
-</blockquote>
 <p>In the discussion above, two <strong>assumptions</strong> are made regarding using the Least Squares Method to estimate state:</p>
 <ul>
 <li><strong>Measurement model is linear</strong></li>
 <li><strong>Measurements are weighted equally</strong> (not suspect that the noise are different in measurements, some could have more noise than others)</li>
 </ul>
+<p>Here's an interactive least squares fitting <a href="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_en.html"><strong>Simulator</strong></a> provided by the PhET Interactive Simulations project at the University of Colorado.</p>
 <p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-p2">Weighted Least Squares</a>.</p>
 <p><strong>Q &amp; A</strong></p>
 <p>State estimation and parameter estimation?</p>
