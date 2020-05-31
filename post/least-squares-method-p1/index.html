@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://dvorak.github.io/favicon.ico?v=1590949607544">
+<link rel="shortcut icon" href="https://dvorak.github.io/favicon.ico?v=1590949983384">
 <link rel="stylesheet" href="https://dvorak.github.io/styles/main.css">
 
 
@@ -30,7 +30,7 @@ Any real-world measurements by the sensor will be imprecise. To get (compute)...
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://dvorak.github.io">
-        <img src="https://dvorak.github.io/images/avatar.png?v=1590949607544" class="site-logo">
+        <img src="https://dvorak.github.io/images/avatar.png?v=1590949983384" class="site-logo">
         <h1 class="site-title">Dvorak</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -103,7 +103,7 @@ Any real-world measurements by the sensor will be imprecise. To get (compute)...
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
             <h2 class="post-title">Least Squares Method - P1</h2>
-            <div class="post-date">2020-05-28</div>
+            <div class="post-date">2020-05-27</div>
             
               <div class="feature-container" style="background-image: url('https://i.loli.net/2020/06/01/KgfLEACbVTo4OSG.png')">
               </div>
@@ -175,11 +175,19 @@ LS(x): Lost function</p>
 <li><strong>Measurements are weighted equally</strong> (not suspect that the noise are different in measurements, some could have more noise than others)</li>
 </ul>
 <p>Here's an interactive least squares fitting <a href="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_en.html"><strong>Simulator</strong></a> provided by the PhET Interactive Simulations project at the University of Colorado.</p>
-<p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-p2">Weighted Least Squares</a>.</p>
+<p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-p2"><strong>Weighted Least Squares</strong></a>.</p>
 <p><strong>Q &amp; A</strong></p>
-<p>State estimation and parameter estimation?</p>
+<ol>
+<li>State estimation and parameter estimation?</li>
+</ol>
 <ul>
 <li>Both are estimation problems. The parameter is constant over time, such as the resistance of a resistor, while the state is defined as a physical quantity that changes over time, such as a vehicle position. Both parameter estimation and state estimation problems belong to the same categories shared similar methods, such as the Least Squares Method.</li>
+</ul>
+<ol start="2">
+<li>Real-world usage of state estimation?</li>
+</ol>
+<ul>
+<li>Localization problem (estimation of position and orientation) in autonomous driving</li>
 </ul>
 
             </div>

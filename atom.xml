@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvorak.github.io</id>
     <title>Dvorak</title>
-    <updated>2020-05-31T18:26:50.474Z</updated>
+    <updated>2020-05-31T18:33:09.301Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvorak.github.io"/>
     <link rel="self" href="https://dvorak.github.io/atom.xml"/>
@@ -26,7 +26,7 @@
         <id>https://dvorak.github.io/post/least-squares-method-p1/</id>
         <link href="https://dvorak.github.io/post/least-squares-method-p1/">
         </link>
-        <updated>2020-05-28T03:35:33.000Z</updated>
+        <updated>2020-05-27T21:35:33.000Z</updated>
         <summary type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
@@ -95,11 +95,19 @@ LS(x): Lost function</p>
 <li><strong>Measurements are weighted equally</strong> (not suspect that the noise are different in measurements, some could have more noise than others)</li>
 </ul>
 <p>Here's an interactive least squares fitting <a href="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_en.html"><strong>Simulator</strong></a> provided by the PhET Interactive Simulations project at the University of Colorado.</p>
-<p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-p2">Weighted Least Squares</a>.</p>
+<p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-p2"><strong>Weighted Least Squares</strong></a>.</p>
 <p><strong>Q &amp; A</strong></p>
-<p>State estimation and parameter estimation?</p>
+<ol>
+<li>State estimation and parameter estimation?</li>
+</ol>
 <ul>
 <li>Both are estimation problems. The parameter is constant over time, such as the resistance of a resistor, while the state is defined as a physical quantity that changes over time, such as a vehicle position. Both parameter estimation and state estimation problems belong to the same categories shared similar methods, such as the Least Squares Method.</li>
+</ul>
+<ol start="2">
+<li>Real-world usage of state estimation?</li>
+</ol>
+<ul>
+<li>Localization problem (estimation of position and orientation) in autonomous driving</li>
 </ul>
 ]]></content>
     </entry>
