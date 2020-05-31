@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvorak.github.io</id>
     <title>Dvorak</title>
-    <updated>2020-05-31T18:16:19.393Z</updated>
+    <updated>2020-05-31T18:20:11.063Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvorak.github.io"/>
     <link rel="self" href="https://dvorak.github.io/atom.xml"/>
@@ -11,10 +11,10 @@
     <rights>All rights reserved 2020, Dvorak</rights>
     <entry>
         <title type="html"><![CDATA[Least Squares Method - Part 2]]></title>
-        <id>https://dvorak.github.io/post/least-squares-method-part-1/</id>
-        <link href="https://dvorak.github.io/post/least-squares-method-part-1/">
+        <id>https://dvorak.github.io/post/least-squares-method-part-2/</id>
+        <link href="https://dvorak.github.io/post/least-squares-method-part-2/">
         </link>
-        <updated>2020-05-31T06:13:46.000Z</updated>
+        <updated>2020-05-31T00:13:46.000Z</updated>
         <summary type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
@@ -23,10 +23,10 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Least Squares Method - Part 1]]></title>
-        <id>https://dvorak.github.io/post/method-of-least-squares/</id>
-        <link href="https://dvorak.github.io/post/method-of-least-squares/">
+        <id>https://dvorak.github.io/post/least-squares-method-part-1/</id>
+        <link href="https://dvorak.github.io/post/least-squares-method-part-1/">
         </link>
-        <updated>2020-05-29T09:35:33.000Z</updated>
+        <updated>2020-05-28T21:35:33.000Z</updated>
         <summary type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
 ]]></summary>
         <content type="html"><![CDATA[<p>📝 A Common Technique in <strong>State Estimation</strong></p>
@@ -80,10 +80,10 @@ LS(x): Lost function</p>
 </blockquote>
 <p>In the discussion above, two <strong>assumptions</strong> are made regarding using the Least Squares Method to estimate state:</p>
 <ul>
-<li>**Measurement model is linear **</li>
-<li><strong>Measurement are  weighted equally</strong> (do not suspect that the noise are different in measurements, some could have more noise than others)</li>
+<li><strong>Measurement model is linear</strong></li>
+<li><strong>Measurements are weighted equally</strong> (not suspect that the noise are different in measurements, some could have more noise than others)</li>
 </ul>
-<p>Extend the Ordinary Least Squares to <a href="">Weighted Least Squares</a>.</p>
+<p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-part-2">Weighted Least Squares</a>.</p>
 <p><strong>Q &amp; A</strong></p>
 <p>State estimation and parameter estimation?</p>
 <ul>

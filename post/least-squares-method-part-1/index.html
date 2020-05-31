@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Least Squares Method - Part 2 | Dvorak</title>
+<title>Least Squares Method - Part 1 | Dvorak</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://dvorak.github.io/favicon.ico?v=1590948955561">
+<link rel="shortcut icon" href="https://dvorak.github.io/favicon.ico?v=1590949204955">
 <link rel="stylesheet" href="https://dvorak.github.io/styles/main.css">
 
 
@@ -20,7 +20,7 @@
 
     <meta name="description" content="📝 A Common Technique in State Estimation
 
-" />
+Any real-world measurements by the sensor will be imprecise. To get (compute)..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -30,7 +30,7 @@
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://dvorak.github.io">
-        <img src="https://dvorak.github.io/images/avatar.png?v=1590948955561" class="site-logo">
+        <img src="https://dvorak.github.io/images/avatar.png?v=1590949204955" class="site-logo">
         <h1 class="site-title">Dvorak</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -102,21 +102,82 @@
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Least Squares Method - Part 2</h2>
-            <div class="post-date">2020-05-31</div>
+            <h2 class="post-title">Least Squares Method - Part 1</h2>
+            <div class="post-date">2020-05-28</div>
+            
+              <div class="feature-container" style="background-image: url('https://i.loli.net/2020/06/01/KgfLEACbVTo4OSG.png')">
+              </div>
             
             <div class="post-content" v-pre>
               <p>📝 A Common Technique in <strong>State Estimation</strong></p>
 <!-- more -->
+<p>Any real-world measurements by the sensor will be imprecise. To get (compute) the physical quantity (like vehicle position) from a set of real-world measurements, the <strong>Least Squares Method</strong> is used to find the best, or the optimal value is given some assumptions about the sensors and external world.</p>
+<p>The method of least squares and also called the ** Squared Error Criterion**. The squared error is the sum of squared errors between what man observed (value of measurements) and what man expects (the best estimate).</p>
+<p>Generally,</p>
+<p>y: Measured values (m times, y_1 ... y_m)<br>
+x: &quot;Actual&quot; value, which is not &quot;exist&quot;<br>
+e: Error or measurement noise term</p>
+<p>For thIis simplest measurement model with total m times measurement:</p>
+<p>y_1 = x + e_1<br>
+y_2 = x + e_2<br>
+...<br>
+y_m = x + e_m</p>
+<p>and</p>
+<p>e_1 = y_1 - x<br>
+e_2 = y_2 - x<br>
+...<br>
+e_m = y_m - x</p>
+<p>The squared error criterion of the case above will be:</p>
+<p>e_1^2 + e_2^2 + ... + e_m^2<br>
+= (y_1 - x )^2 +  (y_1 - x )^2 +... +  (y_1 - x )^2 = L(x)</p>
+<p>As the y_1 ... y_m are known, here L(x) is the function of x, called Lost Function.</p>
+<p>The Least Squares Method could be applied for this case as follows:<br>
+The best estimate of the measured values (m times) is the one that minimizes the sum of squared error.</p>
+<p>Let's complete the previous definition as follows</p>
+<p>y_i: Measured values (m times, y_1 ... y_m)<br>
+x: &quot;Actual&quot; value, which is not exist<br>
+e_i: Error or measurement noise term<br>
+e_i^2: Squared error<br>
+x_LS: the best estimate of x (from a set of measurements)<br>
+LS(x): Lost function</p>
+<p>The state estimate problem now becomes a mathematical problem that finds the x_LS at which the Lost function LS(x) is minimized. This &quot;Minimizing the Squared Error Criterion&quot; in mathematical language will be</p>
+<p>x_LS = ArgMin (LS(x), x)</p>
+<p>To minimize LS(x), just compute the partial derivative to x, set to 0, and solve for an extremum.</p>
+<p>More generally, re-write the criterion using vectors and introduce the Matrix H (called Jacobian Matrix):</p>
+<p>e = y - Hx</p>
+<p>in which e and y are mx1 dimension vector (m tims measurement), x can be nx1 dimension vector. (estimate in total n states, more than one state). So H has dimensions m x n, where m is the number of measurements and n is the number of stats or parameters that we wish to estimate from measurements.</p>
+<p>Now the Squared Error Criterion and its solution can be expressed as follows,</p>
+<figure data-type="image" tabindex="1"><img src="https://i.loli.net/2020/06/01/Z3g8KtUPRkz7BYe.png" alt="LS_1.png" loading="lazy"></figure>
+<p>Partial derivative to x and set to 0</p>
+<figure data-type="image" tabindex="2"><img src="https://i.loli.net/2020/06/01/sCaLgXQhKmAypFR.png" alt="LS_2.png" loading="lazy"></figure>
+<p>Re-arranging and arrive at</p>
+<figure data-type="image" tabindex="3"><img src="https://i.loli.net/2020/06/01/WlqNarLC4e9zoKc.png" alt="LS_3.png" loading="lazy"></figure>
+<p>Note that, The expression above has a unique solution x_LS if and only if H transpose H is not singular, in other words, if the matrix has an inverse. The H transpose H will be n by n according to the above definition. The matrix will be invertible <strong>if and only if (m &gt; = n)</strong> m is greater than or equal to n . So, we need at least as many measurements as unknowns to derive the Least Squares Solution for estimation.</p>
+<p>Back to the simplest case mentioned previously, it could be derivated that for one unknown state (n=1) and the linear model y = x + e ( all 1 in Jacobian Matrix H), the Least Squares Solution is just the mean of the sum of m times measurements.</p>
+<p>x_LS = 1/m (y_1 + y_2 + ... + y_m).</p>
+<blockquote>
+<p>Here's an interactive least squares fitting <a href="https://phet.colorado.edu/sims/html/least-squares-regression/latest/least-squares-regression_en.html"><strong>Simulator</strong></a> provided by the PhET Interactive Simulations project at the University of Colorado.</p>
+</blockquote>
+<p>In the discussion above, two <strong>assumptions</strong> are made regarding using the Least Squares Method to estimate state:</p>
+<ul>
+<li><strong>Measurement model is linear</strong></li>
+<li><strong>Measurements are weighted equally</strong> (not suspect that the noise are different in measurements, some could have more noise than others)</li>
+</ul>
+<p>Extend the Ordinary Least Squares to <a href="https://dvorak.github.io/post/least-squares-method-part-2">Weighted Least Squares</a>.</p>
+<p><strong>Q &amp; A</strong></p>
+<p>State estimation and parameter estimation?</p>
+<ul>
+<li>Both are estimation problems. The parameter is constant over time, such as the resistance of a resistor, while the state is defined as a physical quantity that changes over time, such as a vehicle position. Both parameter estimation and state estimation problems belong to the same categories shared similar methods, such as the Least Squares Method.</li>
+</ul>
 
             </div>
             
             
               <div class="next-post">
                 <div class="next">下一篇</div>
-                <a href="https://dvorak.github.io/post/method-of-least-squares/">
+                <a href="https://dvorak.github.io/post/hello-gridea/">
                   <h3 class="post-title">
-                    Least Squares Method - Part 1
+                    Hello Gridea
                   </h3>
                 </a>
               </div>
