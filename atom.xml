@@ -2,13 +2,39 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvorak.github.io</id>
     <title>Dvorak</title>
-    <updated>2020-05-31T22:58:33.330Z</updated>
+    <updated>2020-06-03T00:33:14.953Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvorak.github.io"/>
     <link rel="self" href="https://dvorak.github.io/atom.xml"/>
     <logo>https://dvorak.github.io/images/avatar.png</logo>
     <icon>https://dvorak.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dvorak</rights>
+    <entry>
+        <title type="html"><![CDATA[Linux - P1]]></title>
+        <id>https://dvorak.github.io/post/linux-p1/</id>
+        <link href="https://dvorak.github.io/post/linux-p1/">
+        </link>
+        <updated>2020-06-02T12:16:48.000Z</updated>
+        <content type="html"><![CDATA[<p>Installation of Ubuntu in Win 10</p>
+<ol>
+<li>Chose virutual machine software - VMare Workstation</li>
+<li>Download Ubuntu &quot;ubuntu-16.04.6-desktop-amd64.iso&quot;</li>
+<li>Installation of Ubuntu and setup <a href="https://zhuanlan.zhihu.com/p/25378627">Guide CN</a></li>
+</ol>
+<p>Problems that may occur</p>
+<ul>
+<li>Resolution setting through VMware Tools <code>sudo ./vmware-install.pl</code></li>
+<li>Keyboard intefer (caps lock) see <a href="https://blog.csdn.net/helen2977/article/details/82143556">Here</a></li>
+</ul>
+<p>Getting started with Linux</p>
+<ul>
+<li><a href="https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/index.html">Linux Tools Quick Tutorial</a></li>
+<li><a href="https://mp.weixin.qq.com/s?__biz=MzU3NTgyODQ1Nw==&amp;mid=2247485369&amp;idx=1&amp;sn=2ccc26613f44fe0f42759c30e3500182&amp;chksm=fd1c7f3fca6bf6290db49a3faadd6953cf8387929875ec1bcd48dc71a54418687b97efc7869b&amp;token=898898197&amp;lang=zh_CN#rd">Linux应用开发自学之路</a></li>
+<li><a href="https://www.zhihu.com/question/36869538">Linux Zhihu</a></li>
+<li>APUE: Advanced Programming in the UNIX Environment</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Least Squares Method - P2]]></title>
         <id>https://dvorak.github.io/post/least-squares-method-p2/</id>
