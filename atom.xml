@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dvorak.github.io</id>
     <title>Dvorak</title>
-    <updated>2020-06-03T00:33:14.953Z</updated>
+    <updated>2020-06-06T14:48:56.586Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dvorak.github.io"/>
     <link rel="self" href="https://dvorak.github.io/atom.xml"/>
@@ -10,11 +10,32 @@
     <icon>https://dvorak.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Dvorak</rights>
     <entry>
-        <title type="html"><![CDATA[Linux - P1]]></title>
+        <title type="html"><![CDATA[Linux/Ubuntu - P2]]></title>
+        <id>https://dvorak.github.io/post/linuxubuntu-p2/</id>
+        <link href="https://dvorak.github.io/post/linuxubuntu-p2/">
+        </link>
+        <updated>2020-06-06T02:31:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>⌨️ Caps lock issue on Ubuntu</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>⌨️ Caps lock issue on Ubuntu</p>
+<!-- more -->
+<h1 id="remap-caps-lock-is-by-using-gnome-tweak-tool">Remap Caps Lock is by using <strong>Gnome Tweak Tool</strong>.</h1>
+<ol>
+<li>You can install it via the Ubuntu Software Center if you wish or by the command line; it does not come installed on Ubuntu by default.</li>
+<li>Open a terminal by holding 'CTRL', 'ALT' and 'T' at once or by search it in the dash.</li>
+<li>Type in  <code>sudo apt-get install gnome-tweak-tool</code>, where <code>apt-get</code> to <code>install</code> <code>gnome-tweak-tool</code>, and <code>sudo</code> to have root permissions to install software.</li>
+<li>Open <strong>Tweak Tool</strong></li>
+<li>Select <strong>Keyboard &amp; Mouse</strong> on the left bar.</li>
+<li>Select <strong>Additional Layout Options</strong> and then <strong>Caps Lock behaviour</strong>.</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux/Ubuntu - P1]]></title>
         <id>https://dvorak.github.io/post/linux-p1/</id>
         <link href="https://dvorak.github.io/post/linux-p1/">
         </link>
-        <updated>2020-06-02T12:16:48.000Z</updated>
+        <updated>2020-06-02T06:16:48.000Z</updated>
         <content type="html"><![CDATA[<p>Installation of Ubuntu in Win 10</p>
 <ol>
 <li>Chose virutual machine software - VMare Workstation</li>
